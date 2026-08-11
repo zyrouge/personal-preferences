@@ -1,4 +1,8 @@
-# ZSH Preferences
+# zsh-custom-preferences
+
+> I do not use ZSH anymore...
+
+## `~/.zshrc`
 
 ```bash
 PROMPT="%B%K{#581c87}%F{#ffffff} %M %k%K{#6b21a8}%F{#581c87}%f %c %f%k%F{#6b21a8}%f%b "

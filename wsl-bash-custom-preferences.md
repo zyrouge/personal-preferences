@@ -1,4 +1,6 @@
-# `~/.inputrc`
+# wsl-bash-custom-preferences
+
+## `~/.inputrc`
 
 ```bash
 set bell-style none
@@ -8,8 +10,10 @@ set bell-style none
 "\e[B": history-search-forward
 ```
 
-# `~/.bashrc`
+## `~/.bashrc`
 ```bash
+PROMPT_COMMAND=${PROMPT_COMMAND:+"$PROMPT_COMMAND ; "}'printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"'
+
 # prompt
 COLOR_VIOLET_LIGHT='167;139;250'
 COLOR_VIOLET_LIGHTER='196;181;253'
@@ -25,8 +29,9 @@ PS1="${PS1}${FG_COLOR_VIOLET_LIGHTEST}"' $'
 PS1="${PS1}${COLOR_RESET}"' '
 
 # aliases
-alias code='code-insiders'
+# alias code='code-insiders'
 
 # others
+. "$HOME/Vault/Tools/paths.sh"
 export HIST_CONTROL='ignoreboth:erasedups'
 ```
