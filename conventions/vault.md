@@ -1,4 +1,4 @@
-# vault-folder-structure
+# vault
 
 ```
 Vault
@@ -11,7 +11,7 @@ Vault
     └── `<secrets...>`
 ```
 
-## `Vault/Tools/paths.sh`
+## `~/Vault/Tools/paths.sh`
 
 ```bash
 #!/bin/sh

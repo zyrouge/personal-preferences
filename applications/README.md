@@ -1,4 +1,9 @@
-# tools
+# applications
+
+- [git](./git.md)
+- [opencode](./opencode.md)
+
+## commonly used
 
 > Chocolately or proto is used for managing most of the installed applications.
 

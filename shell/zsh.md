@@ -1,4 +1,4 @@
-# zsh-custom-preferences
+# zsh
 
 > I do not use ZSH anymore...
 

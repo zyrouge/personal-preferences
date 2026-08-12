@@ -1,4 +1,4 @@
-# git-bash-custom-preferences
+# wsl-bash
 
 ## `~/.inputrc`
 
@@ -11,9 +11,9 @@ set bell-style none
 ```
 
 ## `~/.bashrc`
+
 ```bash
-ROMPT_COMMAND='history -a'
-PROMPT_COMMAND=${PROMPT_COMMAND:+"$PROMPT_COMMAND; "}'printf "\e]9;9;%s\e\\" "`cygpath -w "$PWD" -C ANSI`"'
+PROMPT_COMMAND=${PROMPT_COMMAND:+"$PROMPT_COMMAND ; "}'printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"'
 
 # prompt
 COLOR_VIOLET_LIGHT='167;139;250'
@@ -33,5 +33,6 @@ PS1="${PS1}${COLOR_RESET}"' '
 # alias code='code-insiders'
 
 # others
+. "$HOME/Vault/Tools/paths.sh"
 export HIST_CONTROL='ignoreboth:erasedups'
 ```
